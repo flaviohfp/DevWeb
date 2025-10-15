@@ -1,0 +1,59 @@
+/* Estilo base para todas as caixas de demonstracao */
+
+.caixa {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* ----------------------------------------------
+            1. DEMONSTRACAO BLOCK 
+-------------------------------------------------  */
+
+.bloco {
+    background-color: red; /* Vermelho*/
+    /* A largura e 100% por padrao, mas definidasd para que as caixas tenham um tamanho visivel,
+    o que ainda as forca e quebrar a linha. */
+
+    width: 250px;
+    height: 50px;
+    /* display: block; e o padrao, mas colocamos aqui para fins didaticos. */
+
+}
+
+
+/* ----------------------------------------------
+            2. DEMONSTRACAO: INLINE
+-------------------------------------------------  */
+
+
+.inline {
+    background-color: #3498db; /*azul */
+    /* Elementos inline se agrupam na mesma linha.  */
+    display: inline;
+    /* NOTE: As propriedades width e height nao tem efeito aqui! O tamanho e ditado pelo conteudo. */
+
+    width: 250px; /* Esta largura sera ignorada */
+    height: 50px; /* Esta altura sera ignorada */
+    padding: 5px; /* Padding funciona, mas verticalmente pode se sobrepor */
+}
+
+
+
+/* ----------------------------------------------
+            3. DEMONSTRACAO: INLINE-BLOCK
+-------------------------------------------------  */
+
+
+.inline-block {
+    background-color: green; /* verde */
+    /* Combina as vantagens: ficam na memsa linha E respeitam width/height. */
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    line-height: 80px; /* Centraliza o texto verticalmente */
+    
+}

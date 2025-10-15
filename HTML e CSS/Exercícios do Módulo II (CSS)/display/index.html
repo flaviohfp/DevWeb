@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+
+<body>
+    <h1>A Propriedade de 'display' no CSS</h1>
+    <p>Abaixo. veja com os elementos se comportam dependendo do seu valor de 'display'</p>
+
+    <hr>
+
+    <h2>1. Display: block</h2>
+    <p>Elementos 'block' ocupam toda a largura e sempre forcam uma quebra de linha, mesmo que haja espaco sobrando ao lado.</p>
+    
+    <div>
+        <!-- tres caixas block: cada uma estara em sua propria linha -->
+        <div class="caixa bloco">Caixa Bloco1</div>
+        <div class="caixa bloco">Caixa Bloco2</div>
+        <div class="caixa bloco">Caixa Bloco3</div>
+    </div>
+    
+    <hr>
+
+    <h2>2. Display inline-block</h2>
+    <p>Elementos 'inline' so o ocupam o espaco do seu conteudo e ficam lado a lado. Eles **Ignoram** as definicoes fr 'width' e 'height'.</p>
+
+    <div>
+        <!-- tres caixas inline: cada uma estara em sua propria linha -->
+        <span class="caixa inline">inline A</span>
+        <span class="caixa inline">inline B (Com conteudo Maior)</span>
+        <span class="caixa inline">Inline C</span>
+    </div>
+
+    <hr>
+
+    <h2>3.Display: Inline-Block</h2>
+    <p>O melhor dos dois mundos: ficam lado a lado E respeitam as definicoes de 'width' e 'height'.</p>
+
+
+    <div>
+        <!--Tres caixas inline-block: ficam na mesma linha e mantem o  tamanho definido -->
+        <div class="caixa inline-block">Inline-Block I</div>
+        <div class="caixa inline-block">Inline-Block II</div>
+        <div class="caixa inline-block">Inline-Block III</div>
+    </div>
+
+</body>
+</html>
