@@ -1,0 +1,56 @@
+body{
+    background-color: bisque;
+    display: block;
+    text-align: center;
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.noticia1{
+    float: left;
+    width: 50%;
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.noticia2{
+    float: left;
+    width: 50%;
+    display: inline-block;
+   background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    
+    
+}
+
+
+
+aside {
+  float: right;
+  width: 25%;
+}
+
+
+
+
+
+
+footer{
+    clear: both;
+}
