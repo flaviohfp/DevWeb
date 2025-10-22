@@ -8,23 +8,30 @@
   <!-- DICA:
   https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+
   -->
+
+
+  
   <style>
     .container {
       color: white;
       border: 5px solid gold;
       display: flex;
-      flex-direction: column;   
-      width: 150px;             
-      height: 100vh;           
+      flex-direction: column;   /* organiza os blocos em coluna vertical */
+      width: 150px;             /* largura da tabela */
+      height: 100vh;            /* ocupa toda a altura da tela */
+      justify-content: flex-start; /* garante que os blocos comecem do topo */
     }
 
-    
+    /*
+    Selecione todos os elementos que são filhos diretos de .container class.
+    */
     .container > div {
-      flex: 1;                 
+      flex: 1;                  /* todos os blocos têm o mesmo tamanho vertical */
       display: flex;
-      justify-content: center; 
-      align-items: center;      
+      justify-content: center;  /* centraliza o texto horizontalmente */
+      align-items: center;      /* centraliza o texto verticalmente */
       font-family: Arial, sans-serif;
       font-weight: bold;
       font-size: 16px;
