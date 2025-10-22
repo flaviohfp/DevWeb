@@ -1,0 +1,41 @@
+
+/* -------------------------------------------------------------
+                CONTEINER FLEX (ELEMENTO PAI)
+    ------------------------------------------------------------*/
+
+.flex-container {
+    /* 1- Ativa o Flexbox */
+    display: flex;
+
+    /* 2- Define o eixo principal como linha (horizontal)  */
+    flex-direction: row;
+
+    /* 3- Adiciona espacamento entre os itens */
+    gap: 20px;
+
+    /* CENTRALIZACAO E VISUALIZACAO */
+
+    width: 80%;
+    max-width: 700px;
+    height: 250px;
+    padding: 10px;
+    border: 3px dashed blue;
+    align-items: center; /* Alinha os itens verticalmente ao centro */ 
+    justify-content: 10px; /* Alinha os itens horizontalmente no inicio  flex-end, center, space-between */
+    border-radius: 10px; 
+    background-color: aliceblue;
+
+
+}
+
+
+.item {
+    /* flex: 1; -> Permite que o item creca e ocupe uma porcao igual do espaco disponivel */
+    flex: 1;
+
+    /*
+    flex-shrink: 0;  padrao 0;
+    flex grow: 1
+
+    */ 
+}
