@@ -1,0 +1,98 @@
+/* -------------------------------------------------------------
+                CONTEINER FLEX (ELEMENTO PAI)
+    ------------------------------------------------------------*/
+
+.flex-container {
+    /* 1- Ativa o Flexbox */
+    display: flex;
+
+    /* 2- Define o eixo principal como linha (horizontal)  */
+    flex-direction: row;
+
+    /* 3- Adiciona espaçamento entre os itens */
+    gap: 20px;
+
+    /* CENTRALIZAÇÃO E VISUALIZAÇÃO */
+
+    width: 80%;
+    max-width: 700px;
+    height: 250px;
+    padding: 10px;
+    border: 3px dashed blue;
+    align-items: center; /* Alinha os itens verticalmente ao centro */ 
+
+    /* CORRIGIDO: justify-content NÃO aceita valores numéricos.
+       Ele controla o alinhamento horizontal dos itens. 
+       Valores possíveis: flex-start, flex-end, center, space-between, space-around, space-evenly */
+    justify-content: flex-start; /* Alinha os itens horizontalmente no início */
+
+    border-radius: 10px; 
+    background-color: aliceblue;
+
+    /* DICA EXTRA: para visualizar melhor o comportamento,
+       experimente alterar o tamanho da tela e testar `flex-wrap: wrap;`
+       para permitir que os itens quebrem linha quando o espaço acabar. */
+    /* flex-wrap: wrap; */
+}
+
+
+/* -------------------------------------------------------------
+                ITENS FLEX (ELEMENTOS FILHOS)
+    ------------------------------------------------------------*/
+
+.item {
+    /* flex: 1; -> Permite que o item cresça e ocupe uma porção igual do espaço disponível */
+    flex: 1;
+
+    /*
+    flex-shrink: 0;  padrão: 1 -> controla o "encolhimento" quando falta espaço
+    flex-grow: 1;   padrão: 0 -> controla o "crescimento" quando sobra espaço
+    flex-basis: 100px; -> tamanho "base" do item antes do ajuste do flex
+    */
+
+    background-color: greenyellow;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* Centraliza o texto verticalmente */
+    font-size: 1.5em;
+    border-radius: 8px;
+    height: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    /* NOVO COMENTÁRIO: a propriedade transition permite criar animações suaves.
+       Aqui, ela faz o fundo mudar suavemente se você alterar a cor no DevTools. */
+   
+}
+
+/* Cada filho pode ter sua própria cor para diferenciação */
+.item:nth-child(2) {
+    background-color: orangered;
+}
+
+.item:nth-child(3) {
+    background-color: purple;
+}
+
+
+/* -------------------------------------------------------------
+                ESTILOS DE DICA (CAIXA INFORMATIVA)
+    ------------------------------------------------------------*/
+
+p.dica {
+    background-color: white;
+    border-left: 5px solid yellow;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 20px;
+
+    /* NOVO COMENTÁRIO: margem-top cria um espaçamento externo entre o parágrafo e o container. */
+}
+
+/* DICA EXTRA:
+   - Experimente alterar flex-direction para column no .flex-container
+     e observe como o eixo principal muda para vertical.
+   - Você também pode usar justify-content e align-items
+     para testar alinhamentos diferentes em cada direção. */
