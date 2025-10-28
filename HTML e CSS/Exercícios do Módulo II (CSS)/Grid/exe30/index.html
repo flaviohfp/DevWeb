@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
   <style>
-    /* 
-    Escreva seu CSS Aqui 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
+    /* ======= CORES ======= 
+      Vermelho: #E72F24
+      Branco:  #F0F1EC
+      Preto:   #232629
+      Azul:    #004592
+      Amarelo: #F9D01E
+      Gap:     9px
+      Borda:   10px preta
+    ======================== */
 
-    Para os tamanhos, verifique as instruções.
-    HINT: Lembre-se você não consegue alterar as propriedades das linhas de um GRID.
-    Mas as linhas de um Grid são transparentes!
-    */
-
-
-    .container{
-        display: grid;
-        width: 648px;
-        height: 648px;
-        margin-left: 450px;
-        margin-top: 50px;
-        
-        background-color: rgb(226, 221, 221);
-
-        grid-template-columns: 300px 55px;
-        grid-template-rows: 320px ;
-        gap: 10px;
-        
-
-       
-
-        
+    body {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
-    .RedBox{
-        background-color: red;
+    .container {
+      display: grid;
+      grid-template-columns: 320px 9px 153px 9px 198px 9px 50px;
+      grid-template-rows: 414px 9px 155px 9px 20px;
+      width: 748px;
+      height: 748px;
+      background-color: #000; /* Linhas pretas */
+      border: 10px solid #000; /* Borda preta externa */
     }
 
-    .BlueBox{
-
-        display: flex;
-        background-color:#004592 ;
-        height: 
-        
-
-        
+    /* ======= Cores básicas ======= */
+    .white {
+      background-color: #F0F1EC;
     }
 
+    .red {
+      background-color: #E72F24;
+    }
 
+    .blue {
+      background-color: #004592;
+    }
 
+    .yellow {
+      background-color: #F9D01E;
+    }
 
+    .black {
+      background-color: #232629;
+    }
 
+    /* ======= Posições no grid ======= */
+    .red {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .top-right {
+      grid-column: 3 / 8;
+      grid-row: 1 / 2;
+    }
+
+    .bottom-left {
+      grid-column: 1 / 2;
+      grid-row: 3 / 6;
+    }
+
+    .bottom-center {
+      grid-column: 3 / 6;
+      grid-row: 3 / 4;
+    }
+
+    .blue {
+      grid-column: 7 / 8;
+      grid-row: 3 / 4;
+    }
+
+    .yellow {
+      grid-column: 5 / 6;
+      grid-row: 5 / 6;
+    }
+
+    .black {
+      grid-column: 3 / 5;
+      grid-row: 5 / 6;
+    }
   </style>
 </head>
-
 <body>
-  <!-- Escreva seu HTML Aqui -->
-
-  <div class="container"> 
-    <div class="RedBox"> </div> 
-    <div class="BlueBox"> </div>
-    <div class="YellowBox"> </div>
-    <div class="blackBox"> </div>
-    <div class="Box1"> </div>
-    <div class="Box2"> </div>
-    <div class="Box3"> </div>
-    <div class="Box4"> </div>
-    <div class="Box5"> </div>
-
-
-
-
-
-
-
-
-
-
+  <div class="container">
+    <div class="red"></div>
+    <div class="white top-right"></div>
+    <div class="white bottom-left"></div>
+    <div class="white bottom-center"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
   </div>
 </body>
-
 </html>
