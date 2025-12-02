@@ -1,5 +1,8 @@
 const principal = document.getElementById("principal");
-const imagens = document.getElementById("imagens");
+const miniaturas = document.querySelectorAll("#imagens img");
 
-
-
+miniaturas.forEach(function(img) {
+    img.addEventListener("click", function() {
+        principal.src = img.src;
+    });
+});
