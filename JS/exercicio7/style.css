@@ -1,0 +1,14 @@
+#imagens img {
+    height: 120px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#principal {
+    height: 230px;
+    width: 350px;
+}
+    
+
