@@ -16,7 +16,6 @@ btnAdicionar.addEventListener("click", function () {
     idadeAtual++;
 });
 
-// Remover Última Linha
 btnRemover.addEventListener("click", function () {
     if (tabela.rows.length > 1) {
 
