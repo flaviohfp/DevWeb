@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Registro Paranormal</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,37 +16,44 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark"
-      aria-label="Fifth navbar example"
-    >
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample05"
-          aria-controls="navbarsExample05"
+          data-bs-target="#navbarMain"
+          aria-controls="navbarMain"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarsExample05">
+
+        <div class="collapse navbar-collapse" id="navbarMain">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" href="#">Início</a>
             </li>
-            <li class="nav-item"><a class="nav-link active" href="#">Criaturas</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sobrevivência</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contato</a></li>
-            <br>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Criaturas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Sobrevivência</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contato</a>
+            </li>
+          </ul>
+
           <form role="search">
             <input
               class="form-control"
               type="search"
-              placeholder="Search"
+              placeholder="Pesquisar"
               aria-label="Search"
             />
           </form>
@@ -51,31 +61,121 @@
       </div>
     </nav>
 
-    <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="display-5 fw-bold text-body-emphasis"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Banco de Dados de Criaturas Paranormais</font></font></h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Após meses de silêncio, a Ordem volta a entrar em contato. Algo deu errado. <br><br>
-    
-    
-                O Sistema de Registro de Criaturas, essencial para catalogar e entender ameaças paranormais, foi parcialmente destruído. Sem esse sistema funcionando, a humanidade fica às cegas, incapaz de identificar, estudar ou se proteger das criaturas que surgem nas sombras.
-                
-                Agora, novos agentes são convocados. Antes de qualquer confronto direto com o paranormal, a missão é clara: reconstruir o sistema, recuperar informações perdidas e organizar os registros novamente. Só assim será possível compreender o que está lá fora — e sobreviver.</font></font>
-            </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Botão principal</font></font>
-                </button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Secundário</font></font>
-                </button>
-            </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="/docs/5.3/assets/brand/bootstrap-logo.svg"
+        alt="Logo"
+        width="72"
+        height="57"
+      />
+
+      <h1 class="display-5 fw-bold">
+        Banco de Dados de Criaturas Paranormais
+      </h1>
+
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Após meses de silêncio, a Ordem volta a entrar em contato. Algo deu
+          errado.
+        </p>
+
+        <p class="lead mb-4">
+          O Sistema de Registro de Criaturas, essencial para catalogar e entender
+          ameaças paranormais, foi parcialmente destruído. Sem esse sistema
+          funcionando, a humanidade fica às cegas, incapaz de identificar,
+          estudar ou se proteger das criaturas que surgem nas sombras.
+        </p>
+
+        <p class="lead mb-4">
+          Agora, novos agentes são convocados. Antes de qualquer confronto direto
+          com o paranormal, a missão é clara: reconstruir o sistema, recuperar
+          informações perdidas e organizar os registros novamente. Só assim será
+          possível compreender o que está lá fora — e sobreviver.
+        </p>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4">
+            Botão principal
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Secundário
+          </button>
         </div>
-    </div>
+      </div>
 
-    
+      <hr class="my-5" />
 
-    
-    
+      <!-- CRIATURAS REGISTRADAS -->
+      <section class="container px-4 py-5" id="criaturas">
+        <h2 class="pb-2 border-bottom">Criaturas Registradas</h2>
 
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <!-- CARD 1 -->
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#toggles2"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis"></h3>
+              <p>
+                Parágrafo de texto abaixo do título para explicá-lo. Vamos
+                acrescentar mais uma frase e provavelmente continuaremos até
+                ficarmos sem palavras.
+              </p>
+              <a href="#" class="btn btn-primary">Botão principal</a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#cpu-fill"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Título em destaque</h3>
+              <p>
+                Parágrafo de texto abaixo do título para explicá-lo. Vamos
+                acrescentar mais uma frase e provavelmente continuaremos até
+                ficarmos sem palavras.
+              </p>
+              <a href="#" class="btn btn-primary">Botão principal</a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+            >
+              <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                <use xlink:href="#tools"></use>
+              </svg>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Título em destaque</h3>
+              <p>
+                Parágrafo de texto abaixo do título para explicá-lo. Vamos
+                acrescentar mais uma frase e provavelmente continuaremos até
+                ficarmos sem palavras.
+              </p>
+              <a href="#" class="btn btn-primary">Botão principal</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
