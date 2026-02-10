@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(3, 3, 14);
+    color: white;
+}
+
+#criaturas img{
+    height: 300px;
+    width: 200px;
+
+}
