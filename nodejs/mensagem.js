@@ -1,7 +1,12 @@
-let numero1 = 545;
-let numero2 = 63;
+let nome = "Jose dos porco";
+let classe = "mago dos porco";
+let nivel = 20;
+let vida = 1000;
+let mana = 1000;
 
-console.log("soma: ", numero1 + numero2);
-console.log("subtracao: ", numero1 - numero2);
-console.log("divisao: ", numero1 / numero2);
-console.log("multiplicacao: ", numero1 * numero2);
+
+console.log("nome: ", nome);
+console.log("classe", classe);
+console.log("nivel: ", nivel);
+console.log("vida: ", vida);
+console.log("mana: ", mana);
