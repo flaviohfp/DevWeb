@@ -1,13 +1,16 @@
-
-let idade = process.argv[2];
-
+let nivel = process.argv[2];
 
 
+console.log("===== Nivel do personagem =====");
 
-console.log("Idade:", idade);
 
-if (idade >= 18) {
-    console.log("maior de idade");
+console.log("Nivel:", nivel);
+
+if (nivel >= 1 || nivel <= 10) {
+    console.log("Iniciante");
+} else if (nivel >= 10 || nivel <= 30) {
+    console.log("Intermediario");
 } else {
-    console.log("menor de idade");
+    console.log("Veterano");
 }
+    
