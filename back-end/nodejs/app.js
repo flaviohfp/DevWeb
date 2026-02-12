@@ -10,7 +10,7 @@ if (!validacoes.ehNumero(numero1) || !validacoes.ehNumero(numero2)) {
     console.log("Erro: valores inválidos.");
 } else {
 
-    console.log("=== CALCULADORA ===");
+    
     console.log("Número 1:", numero1);
     console.log("Número 2:", numero2);
     console.log("-------------------");
