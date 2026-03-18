@@ -8,8 +8,6 @@ const pool = new Pool({
     port: 5432
 });
 
-module.exports = pool;
-
 pool.query("SELECT NOW()", (err, res) => {
 
     if (err) {
@@ -19,3 +17,5 @@ pool.query("SELECT NOW()", (err, res) => {
     }
 
 });
+
+module.exports = pool;
