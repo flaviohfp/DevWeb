@@ -14,6 +14,19 @@ async function listarUsuarios(req, res) {
     }
 }
 
+
+
+async function contarUsuarios(req, res) {
+    try {
+        const total = await usuariosService.listarUsuarios();
+        res.json(total);
+    } catch (erro) {
+        res.status(500).json({ erro: erro.message });
+    }
+}
+
+
+
 async function buscarUsuario(req, res) {
     try {
         const id = Number(req.params.id);
@@ -91,11 +104,15 @@ async function deletarUsuario(req, res) {
     }
 }
 
+
+
+
 module.exports = {
     listarUsuarios,
     buscarUsuario,
     criarUsuario,
     atualizarUsuario,
-    deletarUsuario
+    deletarUsuario,
+    contarUsuarios
 };
 

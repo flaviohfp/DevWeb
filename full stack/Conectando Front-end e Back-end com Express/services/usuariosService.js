@@ -16,7 +16,16 @@ async function buscarUsuarioPorId(id) {
 
     return resultado.rows[0];
 
+    
+
 }
+
+async function contarUsuarios() {
+    const resultado = await pool.query(
+        "SELECT * FROM usuarios COUNT(*)"
+    );
+}
+
 
 /* -------------------------
    FUNÇÕES DE LÓGICA
